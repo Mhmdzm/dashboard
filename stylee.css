@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+    display: flex;
+    
+}
+.menu{
+    background-color: blueviolet;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.5s;
+}
+ul li a:hover, .active{
+    background-color: #ffffff55;
+
+}
+.log-out{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a {
+    background-color: red;
+}
+ul li a i{
+    color: black;
+    font-size: 30px;
+}
+.image-box{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+    
+}
+.image-box img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.menu:hover{
+    width: 260px;
+}
+.contant{
+    width: 100%;
+    margin: 10px;
+}
+.title-info{
+    background-color: #3fceeb;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin: 10px 0;
+
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box{
+    background-color: #3fceeb;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box:hover, td:hover{
+    background-color: rgb(137, 43, 226);
+}
+.box i{
+    font-size: 40px;
+}
+.box .data{
+    text-align: center;
+}
+.box .data span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+td,th{
+    background-color: #3fceeb;
+    height: 40px;
+    border-radius: 8px;
+}
+th{
+    background-color: red;
+}
+.price, .count{
+    padding: 6px;
+    border-radius: 6px;
+
+}
